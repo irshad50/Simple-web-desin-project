@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--link rel="stylesheet" href="style.css"-->
+
+<style>
+*{
+    margin:0;
+    padding:0;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(img.3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin:auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+color: #ff7200;
+font-size: 35px;
+font-family: Arial;
+padding-left: 20px;
+float: left;
+padding-top: 10px;
+
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+list-style: none;
+margin-left: 62px;
+margin-top: 27px;
+font-size: 14px;
+}
+ul li a{
+text-decoration: none;
+color: white;
+font-family: Arial;
+font-weight: bold;
+transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+.srch{
+    font-family: 'Time New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: white;
+    border-radius: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #00f2ff;
+    margin-top: 13px;
+    color: red;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.btn:focus{
+
+    outline: none;
+
+}
+.srch:focus{
+
+outline: none;
+
+}
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+.content .per{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+.content h1{
+    font-family: 'Time New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+.content .cn a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+
+}
+.cn:hover{
+    background-color: white;
+}
+.content span{
+    color:#ff7200;
+    font-size: 65px;
+
+
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 980px;
+}
+.form{
+    width: 250px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+    
+}
+.form input{
+
+    width: 240px;
+    height: 20px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: top 30px;
+    font-family: sans-serif;
+
+}
+.form input:focus{
+    outline: none;
+}
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: pointer;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+background: #fff;
+color: orange;
+}
+
+.btnn a{
+
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+.form .link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+.form .link{
+    text-decoration: none;
+    color: #ff7200;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #d90de8;
+
+}
+.ali{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #de0c0c;
+}
+</style>
+</head>
+<body>
+<div class="main">
+<div class="navbar">
+<div class="icon">
+    <h2 class="logo">ProRoz IRSHAD</h2>
+</div>
+<div class="menu">
+    <ul> 
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABUT</a></li>
+        <li><a href="#">SERVICE</a></li>
+        <li><a href="#">DESIGN</a></li>
+        <li><a href="#">CONTACT</a></li>
+    </ul>
+</div>
+<div class="search">
+    <input class="srch" type="search" name="" placeholder="type to irshad">
+    <a href="#"><button class="btn">Search</button></a>
+</div>
+</div>
+<div class="content">
+    <h1>Wep Design & <br><spam>Devlopment</spam> <br>Course</h1>
+    <p class="par">Lorem ipsum dolor sit amet elit. ailsha maheto is very fast way in tha jurny iusto commodi saepe, animi molestiae officia dolor suscipit autem? <br>Consequuntur, libero ullam odit similique placeat, nobis necessitatibus <br> fugiat nesciunt iste qui distinctio facere, impedit cupiditate.</p>
+
+    <button class="cn"><a href="#">JOIN US</a></button>
+
+<li> my name is irshad ali my name is ali</li>
+<li> my name irshad</li>
+
+    <div class="form">
+        <h2>Login Here</h2>
+        <input type="email" name="email" placeholder="Enter Email Here">
+        <input type="Password" name="" placeholder="Enter Password Here">
+        <button class="btnn"><a href="#">Login</a></button>
+
+        <p class="link">Don't have a account<br>
+        <a href="ali">Sign up here IRSHAD</a></p>
+        <p class="liw">Log in width</p>
+    </div>
+</div>
+</div>
+  </div>
+</body>
+</html>
